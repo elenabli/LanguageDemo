@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.Button;
+import javafx.scene.text.Font;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -36,9 +37,13 @@ public class HelloController {
 //        welcomeText.setText(fullGreeting);
 
         name.setText(bundle.getString("name"));
+        name.setFont(new Font("Arial", 20));
         EN.setText(bundle.getString("firstButton"));
+        EN.setFont(new Font("Arial", 12));
         FA.setText(bundle.getString("secondButton"));
+        FA.setFont(new Font("Arial", 12));
         JP.setText(bundle.getString("thirdButton"));
+        JP.setFont(new Font("Arial", 12));
 
     }
 
